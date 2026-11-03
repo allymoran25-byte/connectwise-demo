@@ -34202,5 +34202,13 @@ const App = () => {
 
 ReactDOM.createRoot(document.getElementById('root')).render(<App />);
 </script>
+<style>
+#cw-nav{position:fixed;right:16px;bottom:44px;z-index:99999;display:flex;gap:4px;background:#fff;border:1px solid #c3d5ea;border-radius:999px;padding:4px;box-shadow:0 2px 10px rgba(0,0,0,.15);font:600 12.5px system-ui,-apple-system,"Segoe UI",sans-serif}
+#cw-nav a{color:#2A65AB;text-decoration:none;padding:7px 14px;border-radius:999px;white-space:nowrap}
+#cw-nav a:hover{background:#e6eef8}
+#cw-nav a.on{background:#2A65AB;color:#fff}
+</style>
+<nav id="cw-nav"><a href="index.html" data-p="index.html">Salesforce Demo</a><a href="vp-dashboard.html" data-p="vp-dashboard.html">VP Dashboard</a><a href="manager-dashboard.html" data-p="manager-dashboard.html">Manager Dashboard</a></nav>
+<script>(function(){var p=location.pathname.split('/').pop()||'index.html';document.querySelectorAll('#cw-nav a').forEach(function(a){if(a.dataset.p===p)a.className='on'})})();</script>
 </body>
 </html>
